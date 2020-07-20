@@ -20,6 +20,14 @@
           <div class="superpower__item-bar superpower__item-bar--vue"></div>
         </li>
         <li class="superpower__item" :class="{ 'superpower__item--is-active': customClass }">
+          <h3 class="superpower__item-title">Javascript & jQuery</h3>
+          <div class="superpower__item-bar superpower__item-bar--js"></div>
+        </li>
+        <li class="superpower__item" :class="{ 'superpower__item--is-active': customClass }">
+          <h3 class="superpower__item-title">Bootstrap 4, Tailwind, Bulma & Materialize</h3>
+          <div class="superpower__item-bar superpower__item-bar--bootstrap"></div>
+        </li>
+        <li class="superpower__item" :class="{ 'superpower__item--is-active': customClass }">
           <h3 class="superpower__item-title">Responsive Web Design</h3>
           <div class="superpower__item-bar superpower__item-bar--rwd"></div>
         </li>
@@ -28,20 +36,12 @@
           <div class="superpower__item-bar superpower__item-bar--git"></div>
         </li>
         <li class="superpower__item" :class="{ 'superpower__item--is-active': customClass }">
-          <h3 class="superpower__item-title">Javascript & jQuery</h3>
-          <div class="superpower__item-bar superpower__item-bar--js"></div>
+          <h3 class="superpower__item-title">Chrome, Firefox, Safari, IE</h3>
+          <div class="superpower__item-bar superpower__item-bar--browser"></div>
         </li>
         <li class="superpower__item" :class="{ 'superpower__item--is-active': customClass }">
-          <h3 class="superpower__item-title">Bootstrap 4 & Tailwind</h3>
-          <div class="superpower__item-bar superpower__item-bar--bootstrap"></div>
-        </li>
-        <li class="superpower__item" :class="{ 'superpower__item--is-active': customClass }">
-          <h3 class="superpower__item-title">Photoshop, Illustrator, inDesign</h3>
+          <h3 class="superpower__item-title">Photoshop, Illustrator, Sketch, Zeplin</h3>
           <div class="superpower__item-bar superpower__item-bar--photoshop"></div>
-        </li>
-        <li class="superpower__item" :class="{ 'superpower__item--is-active': customClass }">
-          <h3 class="superpower__item-title">Sketch</h3>
-          <div class="superpower__item-bar superpower__item-bar--sketch"></div>
         </li>
       </ul>
       <figure class="superpower__img-container">
@@ -154,7 +154,7 @@ export default {
         content: '99%';
         width: 97%;
       }
-      .superpower__item-bar--sketch:after {
+      .superpower__item-bar--browser:after {
         content: '85%';
         width: 84%;
       }

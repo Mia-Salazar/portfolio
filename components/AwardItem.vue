@@ -1,6 +1,6 @@
 <template>
   <div class="awards__list">
-		<article v-for="(award, index) in awards" :key="index" class="award-item">
+		<article v-for="(award, index) in awards" :key="index" :class="`award-item award-item__${index}`">
 			<a :href="`${award.link}`" rel="nofollow noopener noreferrer" target="_blank">
 				<h3 class="award-item__heading">{{award.title}}</h3>
 				<img class="award-item__img" :src="(`images/${award.image}`)" />
@@ -20,7 +20,9 @@ export default {
 			{ title: 'Premio relato breve', link: 'https://twitter.com/AJNaurenia/status/675077654589083650', image: 'naurenia.jpg' },
 			{ title: 'Artículo Medium', link: 'https://medium.com/@marasalazar/developers-nightmare-web-accessibility-52b9a6890403', image: 'ratio.png' },
 			{ title: 'Artículo periódico', link: 'https://sevilla.abc.es/pasionensevilla/actualidad/noticias/a-la-macarena-de-miami-le-cantan-hasta-saetas-85816-1448531812.html', image: 'pasion.png' },
-			{ title: 'Artículo Medium', link: 'https://medium.com/@marasalazar/why-icomoon-why-15c2d78ec96e', image: 'icomoon.png' }
+			{ title: 'Artículo Medium', link: 'https://medium.com/@marasalazar/why-icomoon-why-15c2d78ec96e', image: 'icomoon.png' },
+			{ title: 'Artículo Medium', link: 'https://medium.com/@marasalazar/how-to-structure-css-in-vue-like-a-pro-5475749cf5eae', image: 'tailwind.png' },
+			{ title: 'Artículo Medium', link: 'https://medium.com/@marasalazar/c%C3%B3mo-dar-soporte-a-ie-y-no-morir-en-el-intento-7049dcbbf43f', image: 'death.png' }
     ],
   }),
 }
@@ -56,45 +58,94 @@ export default {
 		cursor:pointer;
 	}
 
-	&:first-of-type{
+	&__0{
 		@media (min-width:1100px){
-			margin-left: -4.688rem;
+			position: absolute;
+			top: -4rem;
+    		left: calc(50% - 125px);
+		}
+
+	}
+
+	&__1 {
+		@media (min-width: 1100px){
+			position: absolute;
+    		top: 12%;
+    		left: 17%;
 		}
 	}
 
-	&:nth-of-type(3){
-		@media (min-width: 768px) and (max-width: 1099px){
+	&__2{
+		@media (min-width: 768px){
 			position: absolute;
 			top: -7.813rem;
 			left: calc(50% - 125px);
 		}
+
+		@media (min-width: 1100px){
+			top: 12%;
+			right: 17%;
+    		left: unset;
+		}
 	}
 
-	&:nth-of-type(4){
-		@media (min-width: 768px) and (max-width: 1099px){
+	&__3{
+		@media (min-width: 768px) {
 			position: absolute;
 			top: 7.813rem;
 			left: calc(50% - 125px);
 		}
 
 		@media (min-width: 1100px){
-			margin-top: -4.063rem;
+			position: absolute;
+			top: 34%;
+			left: 0;
 		}
 	}
 
-	&:nth-of-type(5){
+	&__4{
 		@media (min-width: 1100px){
-			margin-top: -4.063rem;
+			position: absolute;
+			top: 34%;
+			left: calc(50% - 125px);
 		}
 	}
 
-	&:last-of-type{
+	&__5{
 		@media (min-width:1100px){
 			margin-right: -5.125rem;
 		}
 
 		@media (min-width: 1100px){
-			margin-top: -4.063rem;
+			position: absolute;
+			top: 34%;
+			right: 18%;
+		}
+	}
+
+	&__6{
+		@media (min-width: 768px) and (max-width: 1099px){
+			position: absolute;
+			left: calc(50% - 125px);
+    		top: 23.5rem;
+		}
+
+		@media (min-width: 1100px){
+			position: absolute;
+			top: 57%;
+			left: 17%;
+		}
+	}
+
+	&__7{
+		@media (min-width: 768px) and (max-width: 1099px){
+			left: calc(-50% + 125px);
+		}
+
+		@media (min-width: 1100px){
+				position: absolute;
+				top: 57%;
+				right: 17%;
 		}
 	}
 

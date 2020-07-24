@@ -11,7 +11,9 @@
         <img class="awards__img" alt="medalla de honor al superheroe" src="@/assets/images/medal.svg" />
       </figure>
     </div>
-    <AwardItem/>
+    <div class="awards__list-container">
+      <AwardItem/>
+    </div>
   </section>
 </template>
 
@@ -29,19 +31,27 @@ export default {
 <style scoped lang="scss">
 @import '../assets/stylesheets/_application.scss';
 .awards {
+  &__list-container {
+    @media (min-width: 1100px){
+      padding-bottom: 4rem;
+    }
+  }
+
   &__list {
     @media (min-width: 768px){
-      max-width: 749px;
+      max-width: 500px;
       position: relative;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       margin: 7.813rem auto 0 auto;
+      padding-bottom: 16rem;
     }
 
     @media(min-width: 1100px){
-      margin-top: 1.5rem;
       max-width: 750px;
+      margin-top: 3rem;
+      padding-bottom: 35rem;
     }
   }
 

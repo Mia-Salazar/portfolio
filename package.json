@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
+    "nuxt": "^3.4.3",
     "push-dir": "^0.4.1",
     "vue-click-outside": "^1.0.7"
   },
